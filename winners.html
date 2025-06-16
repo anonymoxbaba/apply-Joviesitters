@@ -621,13 +621,13 @@
                     for (let i = startIndex; i < endIndex; i++) {
                         // Special handling for Mory's name and "from" data
                         const winnerToDisplay = { ...allWinnersData[i] }; // Create a copy
-                        if (i === 4 && winnerToDisplay.firstName === 'Mory') { // Check specifically for Mory at the 5th spot
+                        if (i === 4 && winnerToDisplay.firstName === 'Winzaw') { // Check specifically for Mory at the 5th spot
                             winnerToDisplay.name = `${winnerToDisplay.name}`; // Keep just the name as per request
                             // If you want "From: Woonsocket Rhode Island" on a separate line or specific format
                             // you might need to adjust the createWinnerCard function or add a new field.
                             // For now, I'm just putting it in the name.
-                            winnerToDisplay.name = `Mory Maokhamphiou<br>From: Woonsocket Rhode Island`;
-                            winnerToDisplay.firstName = 'Mory'; // Ensure firstName is Mory for the "Read Mory's Story" button
+                            winnerToDisplay.name = `Winzaw  Nai<br>From: Salt Lake City, UT`;
+                            winnerToDisplay.firstName = 'Winzaw'; // Ensure firstName is Mory for the "Read Mory's Story" button
                         }
                          fragment.appendChild(createWinnerCard(winnerToDisplay));
                     }
